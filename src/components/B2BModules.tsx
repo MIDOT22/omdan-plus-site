@@ -114,15 +114,14 @@ const InsuranceIllustration = () => (
         <text x="272" y="65" fill="#00b894" fontSize="8" fontFamily="monospace">● APPROVED</text>
         {/* Cost breakdown */}
         <text x="262" y="92" fill="#888" fontSize="9" fontFamily="monospace">ESTIMATED COST</text>
-        <text x="262" y="116" fill="#fff" fontSize="26" fontWeight="800" fontFamily="sans-serif">₪48,200</text>
+        <text x="262" y="116" fill="#fff" fontSize="26" fontWeight="800" fontFamily="sans-serif">€1,970</text>
         <text x="262" y="132" fill="#888" fontSize="9" fontFamily="monospace">± 5% confidence interval</text>
         {/* Line items */}
         <line x1="262" y1="148" x2="444" y2="148" stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
         {[
-            { label: 'Structural Repair', cost: '₪22,400' },
-            { label: 'Smoke Remediation', cost: '₪8,800' },
-            { label: 'Water Extraction', cost: '₪6,200' },
-            { label: 'Content Replacement', cost: '₪10,800' },
+            { label: 'Structural Repair', cost: '€1,200' },
+            { label: 'Smoke Remediation', cost: '€450' },
+            { label: 'Water Extraction', cost: '€320' },
         ].map((item, i) => (
             <g key={i} transform={`translate(262, ${160 + i * 28})`}>
                 <text fill="#aaa" fontSize="9" fontFamily="monospace" y="10">{item.label}</text>
@@ -131,7 +130,7 @@ const InsuranceIllustration = () => (
         ))}
         <line x1="262" y1="278" x2="444" y2="278" stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
         <text x="262" y="296" fill="#888" fontSize="9" fontFamily="monospace">TOTAL CLAIM</text>
-        <text x="350" y="296" fill="#00b894" fontSize="11" fontWeight="700" fontFamily="sans-serif">₪48,200</text>
+        <text x="350" y="296" fill="#00b894" fontSize="11" fontWeight="700" fontFamily="sans-serif">€1,970</text>
         {/* Process time */}
         <rect x="262" y="308" width="182" height="22" rx="6" fill="rgba(0,82,255,0.1)" stroke="rgba(0,82,255,0.2)" strokeWidth="1" />
         <text x="272" y="323" fill="#0052ff" fontSize="9" fontFamily="monospace">⚡ Processed in 28 seconds</text>
