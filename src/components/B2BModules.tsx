@@ -217,9 +217,15 @@ const modules = [
     },
     {
         tag: 'Sector 02',
-        title: 'Automated Insurance Claims',
-        desc: 'Streamline verification and assessment processes. Reduce fraud and accelerate settlement times with AI-powered visual analysis that delivers results in under 30 seconds.',
-        cta: 'Explore Usage',
+        title: 'Insurance: Frictionless Claims Processing',
+        headline: 'Accelerate Claims from Weeks to Minutes.',
+        desc: 'Lower your Loss Adjustment Expense (LAE) by automating the damage reporting workflow. Our AI engine provides instant, forensic-level assessments that allow your team to settle claims faster and more accurately.',
+        features: [
+            '<strong>Automated Triage:</strong> Instant damage severity classification.',
+            '<strong>Cost Reduction:</strong> Eliminate unnecessary on-site adjuster visits.',
+            '<strong>Data Integrity:</strong> High-precision AI analysis for fraud prevention.',
+        ],
+        cta: 'Learn More About InsurTech Solutions',
         illustration: <InsuranceIllustration />,
         imageLeft: false,
     },
@@ -308,6 +314,14 @@ const B2BModules = () => {
                                 }}>
                                     {mod.title}
                                 </h3>
+
+                                {/* New Headline */}
+                                {(mod as any).headline && (
+                                    <h4 style={{ fontSize: '1.25rem', fontWeight: 600, color: '#333', marginBottom: '1rem', lineHeight: 1.4 }}>
+                                        {(mod as any).headline}
+                                    </h4>
+                                )}
+
                                 <p style={{
                                     color: '#666',
                                     lineHeight: 1.8,
@@ -316,6 +330,19 @@ const B2BModules = () => {
                                 }}>
                                     {mod.desc}
                                 </p>
+
+                                {/* New Key Features */}
+                                {(mod as any).features && (
+                                    <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 2rem 0', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                                        {(mod as any).features.map((feat: any, k: number) => (
+                                            <li key={k} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: '#555', fontSize: '0.95rem', lineHeight: 1.5 }}>
+                                                <div style={{ marginTop: '0.4rem', width: '6px', height: '6px', borderRadius: '50%', background: '#0052ff', flexShrink: 0 }} />
+                                                <span dangerouslySetInnerHTML={{ __html: feat }} />
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
+
                                 <a
                                     href="#contact"
                                     style={{
