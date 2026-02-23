@@ -167,7 +167,7 @@ const ProductShowcase = () => {
                             )}
 
                             {/* Icon */}
-                            <div style={{
+                            <div className={`ecosystem-icon ${product.id === 'omdanai' ? 'pulse-source' : product.id === 'damages-market' ? 'pulse-target' : ''}`} style={{
                                 width: '56px',
                                 height: '56px',
                                 background: 'linear-gradient(135deg, #0052ff, #00c6ff)',
@@ -177,6 +177,8 @@ const ProductShowcase = () => {
                                 justifyContent: 'center',
                                 marginBottom: '1.5rem',
                                 boxShadow: '0 8px 20px rgba(0,82,255,0.3)',
+                                position: 'relative',
+                                zIndex: 2,
                             }}>
                                 {product.icon}
                             </div>
@@ -303,8 +305,17 @@ const ProductShowcase = () => {
                                         zIndex: 10,
                                         overflow: 'visible',
                                     }}>
-                                        <path d="M 0,10 C 8,20 16,0 24,10" fill="none" stroke="#0052ff" strokeWidth="2" opacity="0.2" />
-                                        <path d="M 0,10 C 8,20 16,0 24,10" fill="none" stroke="#00c6ff" strokeWidth="3" strokeDasharray="6 42" className="connector-pulse" strokeLinecap="round" />
+                                        <path id="path-desktop" d="M 0,10 C 8,20 16,0 24,10" fill="none" stroke="#0052ff" strokeWidth="2.5" opacity="0.4" />
+                                        <path d="M 0,10 C 8,20 16,0 24,10" fill="none" stroke="url(#particleGradD)" strokeWidth="3" strokeDasharray="4 44" className="connector-pulse p1" strokeLinecap="round" />
+                                        <path d="M 0,10 C 8,20 16,0 24,10" fill="none" stroke="url(#particleGradD)" strokeWidth="3" strokeDasharray="4 44" className="connector-pulse p2" strokeLinecap="round" />
+                                        <path d="M 0,10 C 8,20 16,0 24,10" fill="none" stroke="url(#particleGradD)" strokeWidth="3" strokeDasharray="4 44" className="connector-pulse p3" strokeLinecap="round" />
+                                        <defs>
+                                            <linearGradient id="particleGradD" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" stopColor="transparent" />
+                                                <stop offset="50%" stopColor="#00c6ff" />
+                                                <stop offset="100%" stopColor="#ffffff" />
+                                            </linearGradient>
+                                        </defs>
                                     </svg>
 
                                     <svg className="connector-mobile" viewBox="0 0 20 24" style={{
@@ -318,8 +329,17 @@ const ProductShowcase = () => {
                                         zIndex: 10,
                                         overflow: 'visible',
                                     }}>
-                                        <path d="M 10,0 C 20,8 0,16 10,24" fill="none" stroke="#0052ff" strokeWidth="2" opacity="0.2" />
-                                        <path d="M 10,0 C 20,8 0,16 10,24" fill="none" stroke="#00c6ff" strokeWidth="3" strokeDasharray="6 42" className="connector-pulse" strokeLinecap="round" />
+                                        <path id="path-mobile" d="M 10,0 C 20,8 0,16 10,24" fill="none" stroke="#0052ff" strokeWidth="2.5" opacity="0.4" />
+                                        <path d="M 10,0 C 20,8 0,16 10,24" fill="none" stroke="url(#particleGradM)" strokeWidth="3" strokeDasharray="4 44" className="connector-pulse p1" strokeLinecap="round" />
+                                        <path d="M 10,0 C 20,8 0,16 10,24" fill="none" stroke="url(#particleGradM)" strokeWidth="3" strokeDasharray="4 44" className="connector-pulse p2" strokeLinecap="round" />
+                                        <path d="M 10,0 C 20,8 0,16 10,24" fill="none" stroke="url(#particleGradM)" strokeWidth="3" strokeDasharray="4 44" className="connector-pulse p3" strokeLinecap="round" />
+                                        <defs>
+                                            <linearGradient id="particleGradM" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" stopColor="transparent" />
+                                                <stop offset="50%" stopColor="#00c6ff" />
+                                                <stop offset="100%" stopColor="#ffffff" />
+                                            </linearGradient>
+                                        </defs>
                                     </svg>
                                 </>
                             )}
@@ -501,9 +521,27 @@ const ProductShowcase = () => {
                     100% { stroke-dashoffset: 0; }
                 }
                 .connector-pulse {
-                    animation: pulseFlow 2.5s linear infinite;
-                    filter: drop-shadow(0 0 3px rgba(0, 198, 255, 0.8));
+                    animation: pulseFlow 2s linear infinite;
+                    filter: drop-shadow(0 0 5px #0066FF);
                 }
+                .connector-pulse.p1 { animation-delay: 0s; }
+                .connector-pulse.p2 { animation-delay: -0.66s; }
+                .connector-pulse.p3 { animation-delay: -1.33s; }
+
+                @keyframes iconPulse {
+                    0% { transform: scale(1); box-shadow: 0 8px 20px rgba(0,82,255,0.3); }
+                    50% { transform: scale(1.05); box-shadow: 0 12px 28px rgba(0,198,255,0.5); }
+                    100% { transform: scale(1); box-shadow: 0 8px 20px rgba(0,82,255,0.3); }
+                }
+
+                .pulse-source {
+                    animation: iconPulse 2s ease-in-out infinite;
+                }
+                .pulse-target {
+                    animation: iconPulse 2s ease-in-out infinite;
+                    animation-delay: 1s; /* Offset from source */
+                }
+
                 .connector-desktop {
                     display: block;
                 }
