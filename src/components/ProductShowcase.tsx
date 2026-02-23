@@ -124,6 +124,7 @@ const ProductShowcase = () => {
                             key={product.id}
                             id={`product-${product.id}`}
                             style={{
+                                zIndex: product.id === 'omdanai' ? 10 : 1,
                                 border: '1.5px solid #0052ff',
                                 borderRadius: '16px',
                                 padding: '2.5rem',
@@ -302,10 +303,10 @@ const ProductShowcase = () => {
                                         height: '20px',
                                         transform: 'translateY(-50%)',
                                         pointerEvents: 'none',
-                                        zIndex: 10,
+                                        zIndex: 50,
                                         overflow: 'visible',
                                     }}>
-                                        <path id="path-desktop" d="M 0,10 C 8,20 16,0 24,10" fill="none" stroke="#0052ff" strokeWidth="2.5" opacity="0.4" />
+                                        <path id="path-desktop" d="M 0,10 C 8,20 16,0 24,10" fill="none" stroke="#0052ff" strokeWidth="3" opacity="0.15" />
                                         <path d="M 0,10 C 8,20 16,0 24,10" fill="none" stroke="url(#particleGradD)" strokeWidth="3" strokeDasharray="4 44" className="connector-pulse p1" strokeLinecap="round" />
                                         <path d="M 0,10 C 8,20 16,0 24,10" fill="none" stroke="url(#particleGradD)" strokeWidth="3" strokeDasharray="4 44" className="connector-pulse p2" strokeLinecap="round" />
                                         <path d="M 0,10 C 8,20 16,0 24,10" fill="none" stroke="url(#particleGradD)" strokeWidth="3" strokeDasharray="4 44" className="connector-pulse p3" strokeLinecap="round" />
@@ -326,10 +327,10 @@ const ProductShowcase = () => {
                                         height: '1.5rem',
                                         transform: 'translateX(-50%)',
                                         pointerEvents: 'none',
-                                        zIndex: 10,
+                                        zIndex: 50,
                                         overflow: 'visible',
                                     }}>
-                                        <path id="path-mobile" d="M 10,0 C 20,8 0,16 10,24" fill="none" stroke="#0052ff" strokeWidth="2.5" opacity="0.4" />
+                                        <path id="path-mobile" d="M 10,0 C 20,8 0,16 10,24" fill="none" stroke="#0052ff" strokeWidth="3" opacity="0.15" />
                                         <path d="M 10,0 C 20,8 0,16 10,24" fill="none" stroke="url(#particleGradM)" strokeWidth="3" strokeDasharray="4 44" className="connector-pulse p1" strokeLinecap="round" />
                                         <path d="M 10,0 C 20,8 0,16 10,24" fill="none" stroke="url(#particleGradM)" strokeWidth="3" strokeDasharray="4 44" className="connector-pulse p2" strokeLinecap="round" />
                                         <path d="M 10,0 C 20,8 0,16 10,24" fill="none" stroke="url(#particleGradM)" strokeWidth="3" strokeDasharray="4 44" className="connector-pulse p3" strokeLinecap="round" />
@@ -521,25 +522,25 @@ const ProductShowcase = () => {
                     100% { stroke-dashoffset: 0; }
                 }
                 .connector-pulse {
-                    animation: pulseFlow 2s linear infinite;
-                    filter: drop-shadow(0 0 5px #0066FF);
+                    animation: pulseFlow 1.5s linear infinite;
+                    filter: drop-shadow(0 0 8px #0066FF);
                 }
                 .connector-pulse.p1 { animation-delay: 0s; }
-                .connector-pulse.p2 { animation-delay: -0.66s; }
-                .connector-pulse.p3 { animation-delay: -1.33s; }
+                .connector-pulse.p2 { animation-delay: -0.5s; }
+                .connector-pulse.p3 { animation-delay: -1.0s; }
 
                 @keyframes iconPulse {
-                    0% { transform: scale(1); box-shadow: 0 8px 20px rgba(0,82,255,0.3); }
-                    50% { transform: scale(1.05); box-shadow: 0 12px 28px rgba(0,198,255,0.5); }
-                    100% { transform: scale(1); box-shadow: 0 8px 20px rgba(0,82,255,0.3); }
+                    0% { transform: scale(1); box-shadow: 0 8px 20px rgba(0,82,255,0.3); filter: brightness(1) drop-shadow(0 0 0 rgba(255,255,255,0)); }
+                    50% { transform: scale(1.08); box-shadow: 0 12px 28px rgba(0,198,255,0.6); filter: brightness(1.25) drop-shadow(0 0 8px rgba(255,255,255,0.5)); }
+                    100% { transform: scale(1); box-shadow: 0 8px 20px rgba(0,82,255,0.3); filter: brightness(1) drop-shadow(0 0 0 rgba(255,255,255,0)); }
                 }
 
                 .pulse-source {
-                    animation: iconPulse 2s ease-in-out infinite;
+                    animation: iconPulse 1.5s ease-in-out infinite;
                 }
                 .pulse-target {
-                    animation: iconPulse 2s ease-in-out infinite;
-                    animation-delay: 1s; /* Offset from source */
+                    animation: iconPulse 1.5s ease-in-out infinite;
+                    animation-delay: 0.75s; /* Offset from source */
                 }
 
                 .connector-desktop {
