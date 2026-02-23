@@ -27,13 +27,23 @@ const products = [
             </svg>
         ),
         name: 'Damages Market',
-        subtitle: 'Powering the DTB Revolution',
+        subtitle: 'The Global DTB Revolution',
         badge: 'COMING SOON',
         badgeColor: '#888',
-        desc: 'The core engine where forensic intelligence meets high-liquidity execution. We’ve built a bridge between high-precision AI diagnostics and the global restoration industry, transforming damage data into a decentralized DTB (Damage to Business) marketplace. OmdanAI’s diagnostics flow into a geo-fenced ecosystem, matching verified property claims—from water damage in Buenos Aires to structural repairs in Athens—with a pre-vetted network of local contractors for real-time business execution.',
-        features: [],
-        cta: 'Explore the Market',
+        desc: 'A decentralized marketplace connecting forensic AI diagnostics with local business execution. We bridge the gap between verified property claims and a global network of specialized contractors.',
+        features: [
+            'Geo-Fenced Matchmaking',
+            'High-Liquidity DTB Market',
+            'Verified Forensic Leads'
+        ],
+        cta: 'Explore Market Details',
         highlight: false,
+        fullContent: {
+            title: 'Damages Market: Powering the DTB Revolution',
+            desc: 'The core engine where forensic intelligence meets high-liquidity execution. We’ve built a bridge between high-precision AI diagnostics and the global restoration industry, transforming damage data into a decentralized DTB (Damage to Business) marketplace. OmdanAI’s diagnostics flow into a geo-fenced ecosystem, matching verified property claims—from water damage in Buenos Aires to structural repairs in Athens—with a pre-vetted network of local contractors for real-time business execution.',
+            features: [],
+            cta: 'Contact Partnerships'
+        }
     },
     {
         id: 'omdan-enterprise',
@@ -444,7 +454,7 @@ const ProductShowcase = () => {
                                     (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
                                 }}
                             >
-                                Contact Sales
+                                {(activeProduct as any).fullContent.cta || "Contact Sales"}
                             </a>
                         </div>
                     </div>
