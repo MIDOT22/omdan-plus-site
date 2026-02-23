@@ -44,7 +44,7 @@ const products = [
                 <line x1="12" y1="17" x2="12" y2="21" />
             </svg>
         ),
-        name: 'OmdanEnterprise',
+        name: 'Property Adjusters',
         badge: 'COMING SOON',
         badgeColor: '#888',
         desc: 'A dedicated platform for property adjusters to generate professional reports in minutes, built for industry compliance.',
