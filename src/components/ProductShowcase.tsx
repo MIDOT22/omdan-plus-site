@@ -289,6 +289,40 @@ const ProductShowcase = () => {
                                     <path d="M5 12h14M12 5l7 7-7 7" />
                                 </svg>
                             </a>
+
+                            {product.id === 'omdanai' && (
+                                <>
+                                    <svg className="connector-desktop" viewBox="0 0 24 20" style={{
+                                        position: 'absolute',
+                                        top: '50%',
+                                        right: '-1.5rem',
+                                        width: '1.5rem',
+                                        height: '20px',
+                                        transform: 'translateY(-50%)',
+                                        pointerEvents: 'none',
+                                        zIndex: 10,
+                                        overflow: 'visible',
+                                    }}>
+                                        <path d="M 0,10 C 8,20 16,0 24,10" fill="none" stroke="#0052ff" strokeWidth="2" opacity="0.2" />
+                                        <path d="M 0,10 C 8,20 16,0 24,10" fill="none" stroke="#00c6ff" strokeWidth="3" strokeDasharray="6 42" className="connector-pulse" strokeLinecap="round" />
+                                    </svg>
+
+                                    <svg className="connector-mobile" viewBox="0 0 20 24" style={{
+                                        position: 'absolute',
+                                        bottom: '-1.5rem',
+                                        left: '50%',
+                                        width: '20px',
+                                        height: '1.5rem',
+                                        transform: 'translateX(-50%)',
+                                        pointerEvents: 'none',
+                                        zIndex: 10,
+                                        overflow: 'visible',
+                                    }}>
+                                        <path d="M 10,0 C 20,8 0,16 10,24" fill="none" stroke="#0052ff" strokeWidth="2" opacity="0.2" />
+                                        <path d="M 10,0 C 20,8 0,16 10,24" fill="none" stroke="#00c6ff" strokeWidth="3" strokeDasharray="6 42" className="connector-pulse" strokeLinecap="round" />
+                                    </svg>
+                                </>
+                            )}
                         </div>
                     ))}
                 </div>
@@ -460,6 +494,35 @@ const ProductShowcase = () => {
                     </div>
                 </div>
             )}
+
+            <style>{`
+                @keyframes pulseFlow {
+                    0% { stroke-dashoffset: 48; }
+                    100% { stroke-dashoffset: 0; }
+                }
+                .connector-pulse {
+                    animation: pulseFlow 2.5s linear infinite;
+                    filter: drop-shadow(0 0 3px rgba(0, 198, 255, 0.8));
+                }
+                .connector-desktop {
+                    display: block;
+                }
+                .connector-mobile {
+                    display: none;
+                }
+                @media (max-width: 768px) {
+                    .connector-desktop {
+                        display: none !important;
+                    }
+                    .connector-mobile {
+                        display: block !important;
+                    }
+                }
+                @keyframes modalSlideUp {
+                    from { opacity: 0; transform: translateY(20px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+            `}</style>
         </section>
     );
 };
