@@ -22,21 +22,21 @@ const RealEstateIllustration = () => (
         <rect x="204" y="60" width="24" height="124" rx="4" fill="rgba(0,82,255,0.8)" />
         <rect x="236" y="40" width="24" height="144" rx="4" fill="#0052ff" />
         {/* Labels */}
-        <text x="44" y="200" fill="#555" fontSize="9" fontFamily="monospace">Q1</text>
-        <text x="76" y="200" fill="#555" fontSize="9" fontFamily="monospace">Q2</text>
-        <text x="108" y="200" fill="#555" fontSize="9" fontFamily="monospace">Q3</text>
-        <text x="140" y="200" fill="#555" fontSize="9" fontFamily="monospace">Q4</text>
-        <text x="172" y="200" fill="#555" fontSize="9" fontFamily="monospace">Q5</text>
-        <text x="204" y="200" fill="#555" fontSize="9" fontFamily="monospace">Q6</text>
-        <text x="236" y="200" fill="#555" fontSize="9" fontFamily="monospace">Q7</text>
+        <text x="44" y="200" fill="#888" fontSize="10" fontFamily="monospace">Q1</text>
+        <text x="76" y="200" fill="#888" fontSize="10" fontFamily="monospace">Q2</text>
+        <text x="108" y="200" fill="#888" fontSize="10" fontFamily="monospace">Q3</text>
+        <text x="140" y="200" fill="#888" fontSize="10" fontFamily="monospace">Q4</text>
+        <text x="172" y="200" fill="#888" fontSize="10" fontFamily="monospace">Q5</text>
+        <text x="204" y="200" fill="#888" fontSize="10" fontFamily="monospace">Q6</text>
+        <text x="236" y="200" fill="#888" fontSize="10" fontFamily="monospace">Q7</text>
         {/* Title */}
-        <text x="44" y="44" fill="#fff" fontSize="11" fontWeight="600" fontFamily="sans-serif">Property Value Index</text>
-        <text x="44" y="58" fill="#0052ff" fontSize="9" fontFamily="monospace">+18.4% YoY</text>
+        <text x="44" y="44" fill="#ffffff" fontSize="13" fontWeight="700" fontFamily="sans-serif">Property Value Index</text>
+        <text x="44" y="60" fill="#4d8fff" fontSize="11" fontFamily="monospace">+18.4% YoY</text>
         {/* Right panel */}
         <rect x="320" y="24" width="136" height="80" rx="8" fill="#111827" stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
-        <text x="336" y="44" fill="#888" fontSize="9" fontFamily="monospace">PORTFOLIO VALUE</text>
-        <text x="336" y="64" fill="#fff" fontSize="18" fontWeight="800" fontFamily="sans-serif">₪4.2M</text>
-        <text x="336" y="80" fill="#00b894" fontSize="9" fontFamily="monospace">↑ 12.3% this month</text>
+        <text x="336" y="44" fill="#aaaaaa" fontSize="10" fontFamily="monospace">PORTFOLIO VALUE</text>
+        <text x="336" y="66" fill="#ffffff" fontSize="20" fontWeight="800" fontFamily="sans-serif">€3.8M</text>
+        <text x="336" y="82" fill="#00e0a0" fontSize="10" fontFamily="monospace">↑ 12.3% this month</text>
         {/* Map placeholder */}
         <rect x="320" y="116" width="136" height="88" rx="8" fill="#111827" stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
         <circle cx="388" cy="155" r="30" fill="rgba(0,82,255,0.1)" stroke="rgba(0,82,255,0.3)" strokeWidth="1" />
@@ -44,17 +44,17 @@ const RealEstateIllustration = () => (
         <circle cx="370" cy="145" r="3" fill="rgba(0,82,255,0.6)" />
         <circle cx="400" cy="165" r="3" fill="rgba(0,82,255,0.6)" />
         <circle cx="380" cy="168" r="2" fill="rgba(0,82,255,0.4)" />
-        <text x="336" y="132" fill="#888" fontSize="9" fontFamily="monospace">GEO COVERAGE</text>
+        <text x="336" y="134" fill="#aaaaaa" fontSize="10" fontFamily="monospace">GEO COVERAGE</text>
         {/* Bottom row */}
         <rect x="24" y="216" width="136" height="60" rx="8" fill="#111827" stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
-        <text x="40" y="234" fill="#888" fontSize="9" fontFamily="monospace">ACCURACY SCORE</text>
-        <text x="40" y="256" fill="#fff" fontSize="20" fontWeight="800" fontFamily="sans-serif">94.2%</text>
+        <text x="40" y="235" fill="#aaaaaa" fontSize="10" fontFamily="monospace">ACCURACY SCORE</text>
+        <text x="40" y="260" fill="#ffffff" fontSize="24" fontWeight="800" fontFamily="sans-serif">94.2%</text>
         <rect x="172" y="216" width="136" height="60" rx="8" fill="#111827" stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
-        <text x="188" y="234" fill="#888" fontSize="9" fontFamily="monospace">REPORTS TODAY</text>
-        <text x="188" y="256" fill="#fff" fontSize="20" fontWeight="800" fontFamily="sans-serif">1,847</text>
+        <text x="188" y="235" fill="#aaaaaa" fontSize="10" fontFamily="monospace">REPORTS TODAY</text>
+        <text x="188" y="260" fill="#ffffff" fontSize="24" fontWeight="800" fontFamily="sans-serif">1,847</text>
         <rect x="320" y="216" width="136" height="60" rx="8" fill="#111827" stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
-        <text x="336" y="234" fill="#888" fontSize="9" fontFamily="monospace">AVG PROCESS TIME</text>
-        <text x="336" y="256" fill="#00b894" fontSize="20" fontWeight="800" fontFamily="sans-serif">28s</text>
+        <text x="336" y="235" fill="#aaaaaa" fontSize="10" fontFamily="monospace">AVG PROCESS TIME</text>
+        <text x="336" y="260" fill="#00e0a0" fontSize="24" fontWeight="800" fontFamily="sans-serif">28s</text>
         {/* Scan line animation */}
         <rect x="24" y="24" width="432" height="2" fill="url(#scanGrad)" opacity="0.4">
             <animateTransform attributeName="transform" type="translate" from="0,0" to="0,312" dur="3s" repeatCount="indefinite" />
@@ -75,17 +75,17 @@ const InsuranceIllustration = () => (
         <rect width="480" height="360" fill="#0d1117" />
         {/* Left: Photo analysis */}
         <rect x="20" y="20" width="210" height="320" rx="10" fill="#161b22" stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
-        <text x="36" y="42" fill="#888" fontSize="9" fontFamily="monospace">DAMAGE PHOTO</text>
+        <text x="36" y="42" fill="#aaaaaa" fontSize="11" fontFamily="monospace">DAMAGE PHOTO</text>
         {/* Simulated damaged wall photo */}
         <rect x="36" y="52" width="178" height="120" rx="6" fill="#1c1c1c" />
         <rect x="36" y="52" width="178" height="120" rx="6" fill="url(#fireGrad)" opacity="0.3" />
         {/* Damage overlay boxes */}
-        <rect x="60" y="70" width="50" height="40" rx="2" fill="none" stroke="#ff6b6b" strokeWidth="1.5" strokeDasharray="4,2" />
-        <text x="62" y="68" fill="#ff6b6b" fontSize="7" fontFamily="monospace">FIRE DMG</text>
-        <rect x="130" y="90" width="60" height="50" rx="2" fill="none" stroke="#ffd93d" strokeWidth="1.5" strokeDasharray="4,2" />
-        <text x="132" y="88" fill="#ffd93d" fontSize="7" fontFamily="monospace">SMOKE</text>
-        <rect x="50" y="120" width="40" height="30" rx="2" fill="none" stroke="#74b9ff" strokeWidth="1.5" strokeDasharray="4,2" />
-        <text x="52" y="118" fill="#74b9ff" fontSize="7" fontFamily="monospace">WATER</text>
+        <rect x="60" y="70" width="50" height="40" rx="2" fill="none" stroke="#ff6b6b" strokeWidth="2" strokeDasharray="4,2" />
+        <text x="62" y="68" fill="#ff6b6b" fontSize="9" fontFamily="monospace" fontWeight="700">FIRE DMG</text>
+        <rect x="130" y="90" width="60" height="50" rx="2" fill="none" stroke="#ffd93d" strokeWidth="2" strokeDasharray="4,2" />
+        <text x="132" y="88" fill="#ffd93d" fontSize="9" fontFamily="monospace" fontWeight="700">SMOKE</text>
+        <rect x="50" y="120" width="40" height="30" rx="2" fill="none" stroke="#74b9ff" strokeWidth="2" strokeDasharray="4,2" />
+        <text x="52" y="118" fill="#74b9ff" fontSize="9" fontFamily="monospace" fontWeight="700">WATER</text>
         <defs>
             <linearGradient id="fireGrad" x1="0%" y1="100%" x2="100%" y2="0%">
                 <stop offset="0%" stopColor="#ff6b6b" />
@@ -93,115 +93,125 @@ const InsuranceIllustration = () => (
             </linearGradient>
         </defs>
         {/* Confidence scores */}
-        <text x="36" y="192" fill="#888" fontSize="9" fontFamily="monospace">DETECTION CONFIDENCE</text>
+        <text x="36" y="192" fill="#aaaaaa" fontSize="11" fontFamily="monospace">DETECTION CONFIDENCE</text>
         {[
             { label: 'Fire Damage', pct: 94, color: '#ff6b6b' },
             { label: 'Smoke Damage', pct: 87, color: '#ffd93d' },
             { label: 'Water Damage', pct: 72, color: '#74b9ff' },
         ].map((item, i) => (
             <g key={i} transform={`translate(36, ${208 + i * 36})`}>
-                <text fill="#ccc" fontSize="9" fontFamily="monospace" y="10">{item.label}</text>
-                <text fill={item.color} fontSize="9" fontFamily="monospace" x="130" y="10">{item.pct}%</text>
-                <rect y="16" width="178" height="6" rx="3" fill="rgba(255,255,255,0.05)" />
-                <rect y="16" width={178 * item.pct / 100} height="6" rx="3" fill={item.color} opacity="0.8" />
+                <text fill="#dddddd" fontSize="11" fontFamily="monospace" fontWeight="600" y="11">{item.label}</text>
+                <text fill={item.color} fontSize="12" fontFamily="monospace" fontWeight="800" x="128" y="11">{item.pct}%</text>
+                <rect y="18" width="178" height="8" rx="4" fill="rgba(255,255,255,0.08)" />
+                <rect y="18" width={178 * item.pct / 100} height="8" rx="4" fill={item.color} opacity="1" />
             </g>
         ))}
         {/* Right: Assessment panel */}
         <rect x="246" y="20" width="214" height="320" rx="10" fill="#161b22" stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
-        <text x="262" y="42" fill="#888" fontSize="9" fontFamily="monospace">AI ASSESSMENT</text>
+        <text x="262" y="42" fill="#aaaaaa" fontSize="11" fontFamily="monospace">AI ASSESSMENT</text>
         {/* Status badge */}
-        <rect x="262" y="52" width="80" height="20" rx="10" fill="rgba(0,184,148,0.15)" stroke="rgba(0,184,148,0.3)" strokeWidth="1" />
-        <text x="272" y="65" fill="#00b894" fontSize="8" fontFamily="monospace">● APPROVED</text>
+        <rect x="262" y="52" width="90" height="22" rx="11" fill="rgba(0,184,148,0.2)" stroke="rgba(0,184,148,0.5)" strokeWidth="1.5" />
+        <text x="272" y="67" fill="#00e0a0" fontSize="10" fontFamily="monospace" fontWeight="700">● APPROVED</text>
         {/* Cost breakdown */}
-        <text x="262" y="92" fill="#888" fontSize="9" fontFamily="monospace">ESTIMATED COST</text>
-        <text x="262" y="116" fill="#fff" fontSize="26" fontWeight="800" fontFamily="sans-serif">€1,970</text>
-        <text x="262" y="132" fill="#888" fontSize="9" fontFamily="monospace">± 5% confidence interval</text>
+        <text x="262" y="94" fill="#aaaaaa" fontSize="11" fontFamily="monospace">ESTIMATED COST</text>
+        <text x="262" y="122" fill="#ffffff" fontSize="30" fontWeight="800" fontFamily="sans-serif">€1,970</text>
+        <text x="262" y="138" fill="#888888" fontSize="10" fontFamily="monospace">± 5% confidence interval</text>
         {/* Line items */}
-        <line x1="262" y1="148" x2="444" y2="148" stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
+        <line x1="262" y1="152" x2="444" y2="152" stroke="rgba(255,255,255,0.1)" strokeWidth="1" />
         {[
             { label: 'Structural Repair', cost: '€1,200' },
             { label: 'Smoke Remediation', cost: '€450' },
             { label: 'Water Extraction', cost: '€320' },
+            { label: 'Content Replacement', cost: '€0' },
         ].map((item, i) => (
-            <g key={i} transform={`translate(262, ${160 + i * 28})`}>
-                <text fill="#aaa" fontSize="9" fontFamily="monospace" y="10">{item.label}</text>
-                <text fill="#fff" fontSize="9" fontFamily="monospace" x="120" y="10">{item.cost}</text>
+            <g key={i} transform={`translate(262, ${164 + i * 26})`}>
+                <text fill="#cccccc" fontSize="11" fontFamily="monospace" y="10">{item.label}</text>
+                <text fill="#ffffff" fontSize="11" fontFamily="monospace" fontWeight="700" x="118" y="10">{item.cost}</text>
             </g>
         ))}
-        <line x1="262" y1="278" x2="444" y2="278" stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
-        <text x="262" y="296" fill="#888" fontSize="9" fontFamily="monospace">TOTAL CLAIM</text>
-        <text x="350" y="296" fill="#00b894" fontSize="11" fontWeight="700" fontFamily="sans-serif">€1,970</text>
+        <line x1="262" y1="272" x2="444" y2="272" stroke="rgba(255,255,255,0.1)" strokeWidth="1" />
+        <text x="262" y="290" fill="#aaaaaa" fontSize="11" fontFamily="monospace">TOTAL CLAIM</text>
+        <text x="348" y="290" fill="#00e0a0" fontSize="13" fontWeight="800" fontFamily="sans-serif">€1,970</text>
         {/* Process time */}
-        <rect x="262" y="308" width="182" height="22" rx="6" fill="rgba(0,82,255,0.1)" stroke="rgba(0,82,255,0.2)" strokeWidth="1" />
-        <text x="272" y="323" fill="#0052ff" fontSize="9" fontFamily="monospace">⚡ Processed in 28 seconds</text>
+        <rect x="262" y="302" width="182" height="26" rx="7" fill="rgba(0,82,255,0.15)" stroke="rgba(0,82,255,0.4)" strokeWidth="1.5" />
+        <text x="270" y="319" fill="#4d8fff" fontSize="11" fontFamily="monospace" fontWeight="600">⚡ Processed in 28 seconds</text>
     </svg>
 );
 
-// SVG Illustration: Infrastructure Monitoring
+// SVG Illustration: Private Property Advocacy
 const InfrastructureIllustration = () => (
     <svg viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%' }}>
-        <rect width="480" height="360" fill="#0a0f1e" />
+        <rect width="480" height="360" fill="#080d18" />
         <defs>
             <pattern id="grid3" width="30" height="30" patternUnits="userSpaceOnUse">
-                <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(0,198,255,0.05)" strokeWidth="1" />
+                <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(108,92,231,0.07)" strokeWidth="1" />
             </pattern>
+            <linearGradient id="houseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stopColor="#6c5ce7" stopOpacity="0.3" />
+                <stop offset="100%" stopColor="#6c5ce7" stopOpacity="0.05" />
+            </linearGradient>
         </defs>
         <rect width="480" height="360" fill="url(#grid3)" />
-        {/* Network nodes */}
+
+        {/* House outline – centre graphic */}
+        <g transform="translate(170, 60)">
+            {/* Roof */}
+            <polygon points="70,0 140,60 0,60" fill="url(#houseGrad)" stroke="#6c5ce7" strokeWidth="2" />
+            {/* Walls */}
+            <rect x="15" y="60" width="110" height="80" fill="rgba(108,92,231,0.1)" stroke="#6c5ce7" strokeWidth="2" />
+            {/* Door */}
+            <rect x="55" y="105" width="30" height="35" rx="3" fill="rgba(108,92,231,0.25)" stroke="rgba(108,92,231,0.6)" strokeWidth="1.5" />
+            {/* Window left */}
+            <rect x="22" y="72" width="28" height="24" rx="3" fill="rgba(0,198,255,0.15)" stroke="rgba(0,198,255,0.5)" strokeWidth="1.5" />
+            {/* Window right */}
+            <rect x="90" y="72" width="28" height="24" rx="3" fill="rgba(0,198,255,0.15)" stroke="rgba(0,198,255,0.5)" strokeWidth="1.5" />
+            {/* Damage marker */}
+            <circle cx="105" cy="88" r="8" fill="rgba(255,107,107,0.2)" stroke="#ff6b6b" strokeWidth="2" />
+            <text x="101" y="93" fill="#ff6b6b" fontSize="10" fontWeight="800" fontFamily="sans-serif">!</text>
+        </g>
+
+        {/* Left panel: Property Status */}
+        <rect x="16" y="20" width="148" height="118" rx="8" fill="rgba(8,13,24,0.92)" stroke="rgba(108,92,231,0.35)" strokeWidth="1.5" />
+        <text x="30" y="40" fill="#aaaaaa" fontSize="11" fontFamily="monospace" fontWeight="600">PROPERTY STATUS</text>
+        <rect x="30" y="50" width="110" height="22" rx="11" fill="rgba(0,184,148,0.18)" stroke="rgba(0,184,148,0.5)" strokeWidth="1.5" />
+        <text x="40" y="65" fill="#00e0a0" fontSize="11" fontFamily="monospace" fontWeight="700">✔ Analysis Complete</text>
+        <text x="30" y="88" fill="#cccccc" fontSize="12" fontFamily="monospace" fontWeight="600">Identified Issues</text>
+        <text x="30" y="110" fill="#ffffff" fontSize="26" fontWeight="800" fontFamily="sans-serif">4</text>
+        <text x="58" y="110" fill="#aaaaaa" fontSize="11" fontFamily="monospace"> found</text>
+        <text x="30" y="130" fill="#888888" fontSize="10" fontFamily="monospace">Roof · Wall · Window · Door</text>
+
+        {/* Right panel: Repair Estimate */}
+        <rect x="316" y="20" width="148" height="118" rx="8" fill="rgba(8,13,24,0.92)" stroke="rgba(0,198,255,0.3)" strokeWidth="1.5" />
+        <text x="330" y="40" fill="#aaaaaa" fontSize="11" fontFamily="monospace" fontWeight="600">REPAIR ESTIMATE</text>
+        <text x="330" y="72" fill="#ffffff" fontSize="28" fontWeight="800" fontFamily="sans-serif">€2,340</text>
+        <text x="330" y="88" fill="#00e0a0" fontSize="11" fontFamily="monospace">± 5% margin</text>
+        <line x1="330" y1="98" x2="450" y2="98" stroke="rgba(255,255,255,0.08)" strokeWidth="1" />
+        <text x="330" y="112" fill="#cccccc" fontSize="11" fontFamily="monospace">Contractor verified</text>
+        <text x="330" y="128" fill="#4d8fff" fontSize="11" fontFamily="monospace" fontWeight="600">● Independent estimate</text>
+
+        {/* Severity Level bar chart */}
+        <rect x="16" y="152" width="448" height="130" rx="8" fill="rgba(8,13,24,0.92)" stroke="rgba(108,92,231,0.2)" strokeWidth="1" />
+        <text x="30" y="172" fill="#aaaaaa" fontSize="11" fontFamily="monospace" fontWeight="600">SEVERITY LEVEL</text>
         {[
-            { cx: 240, cy: 180, r: 16, color: '#00c6ff', label: 'HUB' },
-            { cx: 120, cy: 100, r: 10, color: '#0052ff', label: 'NODE A' },
-            { cx: 360, cy: 100, r: 10, color: '#0052ff', label: 'NODE B' },
-            { cx: 80, cy: 240, r: 8, color: '#6c5ce7', label: 'SENSOR' },
-            { cx: 200, cy: 290, r: 8, color: '#6c5ce7', label: 'SENSOR' },
-            { cx: 380, cy: 260, r: 8, color: '#6c5ce7', label: 'SENSOR' },
-            { cx: 420, cy: 140, r: 8, color: '#00b894', label: 'OK' },
-            { cx: 60, cy: 160, r: 8, color: '#ffd93d', label: 'WARN' },
-        ].map((node, i) => (
-            <g key={i}>
-                <circle cx={node.cx} cy={node.cy} r={node.r + 8} fill={node.color} opacity="0.08" />
-                <circle cx={node.cx} cy={node.cy} r={node.r} fill={node.color} opacity="0.2" stroke={node.color} strokeWidth="1.5" />
-                <circle cx={node.cx} cy={node.cy} r={node.r - 4} fill={node.color} opacity="0.8" />
-                <text x={node.cx} y={node.cy + node.r + 12} fill={node.color} fontSize="7" fontFamily="monospace" textAnchor="middle">{node.label}</text>
+            { label: 'Roof Damage', pct: 78, color: '#ff6b6b' },
+            { label: 'Wall Cracks', pct: 52, color: '#ffd93d' },
+            { label: 'Water Ingress', pct: 35, color: '#74b9ff' },
+        ].map((item, i) => (
+            <g key={i} transform={`translate(30, ${184 + i * 30})`}>
+                <text fill="#dddddd" fontSize="11" fontFamily="monospace" fontWeight="600" y="11">{item.label}</text>
+                <text fill={item.color} fontSize="13" fontFamily="monospace" fontWeight="800" x="280" y="11">{item.pct}%</text>
+                <rect y="16" width="310" height="9" rx="4" fill="rgba(255,255,255,0.07)" />
+                <rect y="16" width={310 * item.pct / 100} height="9" rx="4" fill={item.color} opacity="1" />
             </g>
         ))}
-        {/* Connection lines */}
-        {[
-            [240, 180, 120, 100],
-            [240, 180, 360, 100],
-            [240, 180, 80, 240],
-            [240, 180, 200, 290],
-            [240, 180, 380, 260],
-            [240, 180, 420, 140],
-            [240, 180, 60, 160],
-            [120, 100, 60, 160],
-            [360, 100, 420, 140],
-        ].map(([x1, y1, x2, y2], i) => (
-            <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="rgba(0,198,255,0.15)" strokeWidth="1" strokeDasharray="4,4" />
-        ))}
-        {/* Alert panel */}
-        <rect x="20" y="20" width="160" height="100" rx="8" fill="rgba(10,15,30,0.9)" stroke="rgba(0,198,255,0.15)" strokeWidth="1" />
-        <text x="36" y="38" fill="#888" fontSize="8" fontFamily="monospace">SYSTEM STATUS</text>
-        <text x="36" y="56" fill="#00b894" fontSize="9" fontFamily="monospace">● 47 Nodes Online</text>
-        <text x="36" y="72" fill="#ffd93d" fontSize="9" fontFamily="monospace">⚠ 2 Warnings</text>
-        <text x="36" y="88" fill="#ff6b6b" fontSize="9" fontFamily="monospace">✕ 0 Critical</text>
-        <text x="36" y="108" fill="#555" fontSize="8" fontFamily="monospace">Last scan: 12s ago</text>
-        {/* Metrics panel */}
-        <rect x="300" y="20" width="160" height="100" rx="8" fill="rgba(10,15,30,0.9)" stroke="rgba(0,198,255,0.15)" strokeWidth="1" />
-        <text x="316" y="38" fill="#888" fontSize="8" fontFamily="monospace">ANOMALY DETECTION</text>
-        <text x="316" y="56" fill="#fff" fontSize="18" fontWeight="800" fontFamily="sans-serif">0</text>
-        <text x="316" y="70" fill="#00b894" fontSize="8" fontFamily="monospace">Active Anomalies</text>
-        <text x="316" y="88" fill="#555" fontSize="8" fontFamily="monospace">99.97% uptime (30d)</text>
-        {/* Waveform */}
-        <rect x="20" y="300" width="440" height="44" rx="8" fill="rgba(10,15,30,0.9)" stroke="rgba(0,198,255,0.1)" strokeWidth="1" />
+
+        {/* Footer strip */}
+        <rect x="16" y="296" width="448" height="48" rx="8" fill="rgba(8,13,24,0.92)" stroke="rgba(0,198,255,0.12)" strokeWidth="1" />
         <polyline
-            points="36,322 60,318 80,326 100,314 120,322 140,318 160,322 180,316 200,322 220,318 240,310 260,318 280,322 300,316 320,322 340,318 360,322 380,316 400,322 420,318 440,322"
-            fill="none"
-            stroke="#00c6ff"
-            strokeWidth="1.5"
-            opacity="0.7"
+            points="30,320 55,315 78,324 102,311 126,320 150,316 174,320 198,314 222,320 246,315 270,308 294,316 318,320 342,314 366,320 390,315 414,320 438,315 458,320"
+            fill="none" stroke="#6c5ce7" strokeWidth="2" opacity="0.85"
         />
-        <text x="36" y="338" fill="#555" fontSize="7" fontFamily="monospace">SENSOR FEED — LIVE</text>
+        <text x="30" y="336" fill="#aaaaaa" fontSize="11" fontFamily="monospace" fontWeight="600">DAMAGE SCAN — COMPLETE</text>
     </svg>
 );
 
@@ -209,8 +219,7 @@ const modules = [
     {
         tag: 'Sector 01',
         title: 'Real Estate Intelligence',
-        desc: 'Optimizing asset management through predictive analytics. Enhance property value and operational efficiency with data-driven insights that go beyond surface-level assessments.',
-        cta: 'Learn More',
+        desc: "Optimizing asset management through predictive analytics and localized execution. Our technology empowers property owners with an immediate cost anchor, while renovation contractors can remotely assess damage severity through the Damages Market. This pre-verification allows professionals to filter leads that match their expertise before committing to a site visit, eliminating 'estimate-only' travel and significantly reducing operational overhead for both parties.",
         illustration: <RealEstateIllustration />,
         imageLeft: true,
     },
@@ -224,15 +233,14 @@ const modules = [
             '<strong>Cost Reduction:</strong> Eliminate unnecessary on-site adjuster visits.',
             '<strong>Data Integrity:</strong> High-precision AI analysis for fraud prevention.',
         ],
-        cta: 'Learn More About InsurTech Solutions',
+
         illustration: <InsuranceIllustration />,
         imageLeft: false,
     },
     {
         tag: 'Sector 03',
-        title: 'Infrastructure Monitoring',
-        desc: 'Ensure critical uptime for public and private infrastructure. Continuous monitoring and anomaly detection for large-scale operations across distributed sensor networks.',
-        cta: 'View Case Studies',
+        title: 'Private Property Advocacy',
+        desc: 'Empowering homeowners with professional-grade insights before they hire a contractor. For those without insurance coverage, OmdanAI provides a transparent \'source of truth\'—analyzing damage and generating independent cost estimates to ensure fair pricing and technical clarity.',
         illustration: <InfrastructureIllustration />,
         imageLeft: true,
     },
@@ -342,37 +350,39 @@ const B2BModules = () => {
                                     </ul>
                                 )}
 
-                                <a
-                                    href="#contact"
-                                    style={{
-                                        display: 'inline-flex',
-                                        alignItems: 'center',
-                                        gap: '0.5rem',
-                                        padding: '0.75rem 1.5rem',
-                                        background: '#0a0a0a',
-                                        color: '#fff',
-                                        borderRadius: '8px',
-                                        fontWeight: 600,
-                                        fontSize: '0.9rem',
-                                        textDecoration: 'none',
-                                        transition: 'all 0.3s ease',
-                                    }}
-                                    onMouseEnter={e => {
-                                        (e.currentTarget as HTMLElement).style.background = '#0052ff';
-                                        (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)';
-                                        (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 24px rgba(0,82,255,0.3)';
-                                    }}
-                                    onMouseLeave={e => {
-                                        (e.currentTarget as HTMLElement).style.background = '#0a0a0a';
-                                        (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
-                                        (e.currentTarget as HTMLElement).style.boxShadow = 'none';
-                                    }}
-                                >
-                                    {mod.cta}
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                                        <path d="M5 12h14M12 5l7 7-7 7" />
-                                    </svg>
-                                </a>
+                                {(mod as any).cta && (
+                                    <a
+                                        href="#contact"
+                                        style={{
+                                            display: 'inline-flex',
+                                            alignItems: 'center',
+                                            gap: '0.5rem',
+                                            padding: '0.75rem 1.5rem',
+                                            background: '#0a0a0a',
+                                            color: '#fff',
+                                            borderRadius: '8px',
+                                            fontWeight: 600,
+                                            fontSize: '0.9rem',
+                                            textDecoration: 'none',
+                                            transition: 'all 0.3s ease',
+                                        }}
+                                        onMouseEnter={e => {
+                                            (e.currentTarget as HTMLElement).style.background = '#0052ff';
+                                            (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)';
+                                            (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 24px rgba(0,82,255,0.3)';
+                                        }}
+                                        onMouseLeave={e => {
+                                            (e.currentTarget as HTMLElement).style.background = '#0a0a0a';
+                                            (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
+                                            (e.currentTarget as HTMLElement).style.boxShadow = 'none';
+                                        }}
+                                    >
+                                        {(mod as any).cta}
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                        </svg>
+                                    </a>
+                                )}
                             </div>
                         </div>
                     ))}
