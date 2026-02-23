@@ -38,7 +38,7 @@ const products = [
     {
         id: 'omdan-enterprise',
         icon: (
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-label="Property Adjusters">
                 <rect x="2" y="3" width="20" height="14" rx="2" />
                 <line x1="8" y1="21" x2="16" y2="21" />
                 <line x1="12" y1="17" x2="12" y2="21" />
@@ -56,7 +56,7 @@ const products = [
         cta: 'View Integration',
         highlight: false,
         fullContent: {
-            title: 'OmdanEnterprise: Adjuster Workflow Suite',
+            title: 'Property Adjusters: Adjuster Workflow Suite',
             desc: 'A dedicated platform for property adjusters to generate professional reports in minutes. Built to integrate seamlessly with insurance industry standards and legal requirements, ensuring speed, security, and precision.',
             features: [
                 { title: 'Regulatory Alignment', desc: 'Reports generated according to insurance laws and industry-standard protocols.' },
@@ -391,7 +391,7 @@ const ProductShowcase = () => {
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0052ff" strokeWidth="2">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                                 </svg>
-                                Enterprise Capabilities
+                                Capabilities
                             </h4>
 
                             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
@@ -444,7 +444,7 @@ const ProductShowcase = () => {
                                     (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
                                 }}
                             >
-                                Contact Enterprise Sales
+                                Contact Sales
                             </a>
                         </div>
                     </div>

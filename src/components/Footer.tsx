@@ -17,7 +17,7 @@ const Footer = () => {
             title: 'Products',
             links: [
                 { label: 'OmdanAI App', href: '#products' },
-                { label: 'OmdanEnterprise', href: '#products' },
+                { label: 'Property Adjusters', href: '#products' },
                 { label: 'OmdanAPI', href: '#products' },
                 { label: 'Pricing', href: '#contact' },
             ],
