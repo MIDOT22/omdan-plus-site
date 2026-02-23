@@ -38,9 +38,67 @@ const Hero = () => {
                 justifyContent: 'center',
                 position: 'relative',
                 overflow: 'hidden',
-                background: '#fafafa',
+                background: '#f7f9ff',
             }}
         >
+            {/* ── Mesh Gradient blobs ── */}
+            {/* Blob 1 – Primary blue, top-left */}
+            <div className="mesh-blob mesh-blob-1" style={{
+                position: 'absolute',
+                width: '720px',
+                height: '720px',
+                borderRadius: '50%',
+                background: 'radial-gradient(circle at center, rgba(0,102,255,0.22) 0%, transparent 70%)',
+                filter: 'blur(80px)',
+                top: '-180px',
+                left: '-160px',
+                zIndex: 0,
+                pointerEvents: 'none',
+                willChange: 'transform',
+            }} />
+            {/* Blob 2 – Digital gold, top-right */}
+            <div className="mesh-blob mesh-blob-2" style={{
+                position: 'absolute',
+                width: '580px',
+                height: '580px',
+                borderRadius: '50%',
+                background: 'radial-gradient(circle at center, rgba(245,158,11,0.18) 0%, transparent 70%)',
+                filter: 'blur(80px)',
+                top: '-100px',
+                right: '-120px',
+                zIndex: 0,
+                pointerEvents: 'none',
+                willChange: 'transform',
+            }} />
+            {/* Blob 3 – Slate gray, bottom-center */}
+            <div className="mesh-blob mesh-blob-3" style={{
+                position: 'absolute',
+                width: '640px',
+                height: '640px',
+                borderRadius: '50%',
+                background: 'radial-gradient(circle at center, rgba(100,116,139,0.16) 0%, transparent 70%)',
+                filter: 'blur(80px)',
+                bottom: '-200px',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                zIndex: 0,
+                pointerEvents: 'none',
+                willChange: 'transform',
+            }} />
+            {/* Blob 4 – Soft cyan, mid-right */}
+            <div className="mesh-blob mesh-blob-4" style={{
+                position: 'absolute',
+                width: '420px',
+                height: '420px',
+                borderRadius: '50%',
+                background: 'radial-gradient(circle at center, rgba(0,198,255,0.14) 0%, transparent 70%)',
+                filter: 'blur(80px)',
+                top: '40%',
+                right: '8%',
+                zIndex: 0,
+                pointerEvents: 'none',
+                willChange: 'transform',
+            }} />
             {/* Background grid */}
             <div style={{
                 position: 'absolute',
@@ -290,9 +348,49 @@ const Hero = () => {
                     0% { transform: scale(0.8); opacity: 1; }
                     100% { transform: scale(2); opacity: 0; }
                 }
+
+                /* ── Mesh blob drift animations ── */
+                @keyframes mesh-drift-1 {
+                    0%   { transform: translate(0px,   0px)   scale(1);    }
+                    25%  { transform: translate(60px,  40px)  scale(1.08); }
+                    50%  { transform: translate(30px,  90px)  scale(0.95); }
+                    75%  { transform: translate(-40px, 50px)  scale(1.05); }
+                    100% { transform: translate(0px,   0px)   scale(1);    }
+                }
+                @keyframes mesh-drift-2 {
+                    0%   { transform: translate(0px,  0px)   scale(1);    }
+                    25%  { transform: translate(-70px, 30px) scale(0.92); }
+                    50%  { transform: translate(-30px, 80px) scale(1.1);  }
+                    75%  { transform: translate(50px,  40px) scale(0.97); }
+                    100% { transform: translate(0px,  0px)   scale(1);    }
+                }
+                @keyframes mesh-drift-3 {
+                    0%   { transform: translateX(-50%) translate(0px,   0px)  scale(1);    }
+                    25%  { transform: translateX(-50%) translate(50px,  -60px) scale(1.06); }
+                    50%  { transform: translateX(-50%) translate(-40px, -40px) scale(0.94); }
+                    75%  { transform: translateX(-50%) translate(-60px, -80px) scale(1.04); }
+                    100% { transform: translateX(-50%) translate(0px,   0px)  scale(1);    }
+                }
+                @keyframes mesh-drift-4 {
+                    0%   { transform: translate(0px,  0px)   scale(1);    }
+                    33%  { transform: translate(-50px, -60px) scale(1.12); }
+                    66%  { transform: translate(40px,  -30px) scale(0.9);  }
+                    100% { transform: translate(0px,  0px)   scale(1);    }
+                }
+
+                .mesh-blob-1 { animation: mesh-drift-1 60s ease-in-out infinite; }
+                .mesh-blob-2 { animation: mesh-drift-2 72s ease-in-out infinite; }
+                .mesh-blob-3 { animation: mesh-drift-3 65s ease-in-out infinite; }
+                .mesh-blob-4 { animation: mesh-drift-4 50s ease-in-out infinite; }
+
                 @media (max-width: 640px) {
                     div[style*="gridTemplateColumns: repeat(4, 1fr)"] {
                         grid-template-columns: repeat(2, 1fr) !important;
+                    }
+                    /* Reduce blob size on mobile for performance */
+                    .mesh-blob-1, .mesh-blob-2, .mesh-blob-3, .mesh-blob-4 {
+                        filter: blur(50px) !important;
+                        opacity: 0.7;
                     }
                 }
             `}</style>
