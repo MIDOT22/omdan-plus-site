@@ -219,7 +219,7 @@ const modules = [
     {
         tag: 'Sector 01',
         title: 'Real Estate Intelligence',
-        desc: "Optimizing asset management through predictive analytics and localized execution. Our technology empowers property owners with an immediate cost anchor, while renovation contractors can remotely assess damage severity through the Damages Market. This pre-verification allows professionals to filter leads that match their expertise before committing to a site visit, eliminating 'estimate-only' travel and significantly reducing operational overhead for both parties.",
+        desc: "Optimizing asset management through predictive analytics and localized execution. Our technology empowers property owners with an immediate cost anchor, while renovation contractors can remotely assess damage severity through the Engineering damage report. This pre-verification allows professionals to filter leads that match their expertise before committing to a site visit, eliminating 'estimate-only' travel and significantly reducing operational overhead for both parties.",
         illustration: <RealEstateIllustration />,
         imageLeft: true,
     },
